@@ -1,0 +1,71 @@
+#main {
+    align-items: center;
+    padding: 1rem;
+}
+
+#mainlogo {
+    
+    font-family: "bangers", "sans-serif";
+    font-size: 5rem;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 3px 3px 3px red;
+}
+
+.pick .btn {
+    border: 1rem;
+    background-color: aquamarine;
+    font-family: "bangers", "sans-serif" ;
+    cursor: pointer;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 4px;
+    margin: 2rem;
+    padding: 4px;
+}
+
+.stuff {
+    font-family: "bangers", "sans-serif" ;
+    text-align: center;
+    padding: 2rem
+    ;
+}
+
+#main {
+    background-color: lavenderblush;
+}
+
+.pick {
+    list-style: none;
+    align-items: center;
+}
+
+
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.image {
+    display: grid;
+    width: 200px;
+    height: 200px;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+    Color: #f1f1f1;
+    width: 100%;
+    transition:  .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.container:hover .overlay {
+    opacity: 1;
+}

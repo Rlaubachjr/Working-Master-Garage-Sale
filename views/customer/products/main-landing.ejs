@@ -1,0 +1,67 @@
+<%- include('../../shared/includes/head', { pageTitle: 'Main Landing Page' }) %>
+
+</head>
+
+<body>
+  <%- include('../../shared/includes/header') %>
+  <main id="main">
+    <h1 id="mainlogo">Garage Sale</h1>
+    <div class="stuff">
+      <p>Lots of stuff here!!!</p>
+      <p>Click A Category</p>
+    </div>
+
+    <div id="sort">
+
+      <ul class="pick">
+        <section>
+
+          <form action="/category" method="POST">
+            <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+            <input type="hidden" name="category" value="owls">
+            <li>
+              <button id="owls" class="btn" data-category="owls" data-csrf="<%= locals.csrfToken %>">Owls</button>
+            </li>
+          </form>
+
+          <form action="/category" method="POST">
+            <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+            <input type="hidden" name="category" value="dolls">
+            <li>
+              <button id="owls" class="btn" data-category="owls" data-csrf="<%= locals.csrfToken %>">Dolls</button>
+            </li>
+          </form>
+
+          <form action="/category" method="POST">
+            <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+            <input type="hidden" name="category" value="misc">
+            <li>
+              <button id="owls" class="btn" data-category="owls" data-csrf="<%= locals.csrfToken %>">This-N-That</button>
+            </li>
+          </form>
+          
+          
+          <li>
+            <button id="owls" class="btn" data-category="dolls" data-csrf="<%= locals.csrfToken %>">Owls</button>
+          </li>
+
+        </section>
+
+        <li>
+          <button id="owls" class="btn" data-category="owls" data-csrf="<%= locals.csrfToken %>">Owls</button>
+        </li>
+
+
+        <li>
+          <button id="misc" class="btn" data-category="misc" data-csrf="<%= locals.csrfToken %>">This-N-That</button>
+        </li>
+        <li>
+          <button id="dolls" class="btn" data-category="dolls" data-csrf="<%= locals.csrfToken %>">Dolls</button>
+        </li>
+      </ul>
+
+
+    </div>
+  </main>
+
+  <%- include('../../shared/includes/footer') %>
